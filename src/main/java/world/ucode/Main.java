@@ -1,12 +1,13 @@
 package world.ucode;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import world.ucode.scenes.GameMenu;
+import world.ucode.Scenes.GameMenu;
 
 public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
     @Override
     public void start(Stage primaryStage){
         try {
