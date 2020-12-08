@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>world.ucode.animation.MinionAnimation</OriginalElement>
+  <nodes>
+    <node x="0.0" y="1233.0">world.ucode.DataBase</node>
+    <node x="580.0" y="661.0">javafx.fxml.Initializable</node>
+    <node x="0.0" y="1464.0">world.ucode.animation.MinionAnimation</node>
+    <node x="1160.0" y="968.0">world.ucode.controllers.ControllerGameOver</node>
+    <node x="636.0" y="765.0">world.ucode.controllers.Controller</node>
+    <node x="879.0" y="1360.0">world.ucode.scenes.GameMenu</node>
+    <node x="870.0" y="968.0">world.ucode.controllers.ControllerLoadGame</node>
+    <node x="290.0" y="869.0">world.ucode.controllers.ControllerGamePlay</node>
+    <node x="777.0" y="0.0">world.ucode.pet.Minion</node>
+    <node x="580.0" y="968.0">world.ucode.controllers.ControllerGameMenu</node>
+    <node x="830.5" y="1233.0">world.ucode.scenes.GameScene</node>
+    <node x="0.0" y="12.0">java.io.Serializable</node>
+    <node x="1475.0" y="661.0">javafx.application.Application</node>
+    <node x="697.0" y="1360.0">world.ucode.scenes.LoadGame</node>
+    <node x="1291.0" y="1360.0">world.ucode.scenes.NewGame</node>
+    <node x="164.0" y="0.0">java.lang.constant.Constable</node>
+    <node x="1065.0" y="1360.0">world.ucode.scenes.GamePlay</node>
+    <node x="516.0" y="1360.0">world.ucode.scenes.GameOver</node>
+    <node x="195.0" y="104.0">java.lang.Enum</node>
+    <node x="374.25" y="495.0">world.ucode.pet.PetType</node>
+    <node x="1577.0" y="986.0">world.ucode.Main</node>
+    <node x="148.25" y="495.0">world.ucode.pet.PetAction</node>
+    <node x="579.0" y="0.0">java.lang.Comparable</node>
+    <node x="0.0" y="946.0">world.ucode.controllers.ControllerNewGame</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.lang.Enum" target="java.lang.constant.Constable">
+      <point x="0.0" y="-170.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="world.ucode.controllers.Controller" target="javafx.fxml.Initializable">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="world.ucode.scenes.LoadGame" target="world.ucode.scenes.GameScene">
+      <point x="0.0" y="-27.0" />
+      <point x="778.0" y="1340.0" />
+      <point x="909.3999999999999" y="1340.0" />
+      <point x="-52.60000000000002" y="38.5" />
+    </edge>
+    <edge source="world.ucode.scenes.GameMenu" target="world.ucode.scenes.GameScene">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="world.ucode.scenes.GameOver" target="world.ucode.scenes.GameScene">
+      <point x="0.0" y="-27.0" />
+      <point x="596.5" y="1330.0" />
+      <point x="856.8" y="1330.0" />
+      <point x="-105.20000000000005" y="38.5" />
+    </edge>
+    <edge source="world.ucode.controllers.ControllerGamePlay" target="world.ucode.controllers.Controller">
+      <point x="0.0" y="-159.5" />
+      <point x="425.0" y="849.0" />
+      <point x="683.4" y="849.0" />
+      <point x="-31.600000000000023" y="27.0" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.lang.Comparable">
+      <point x="111.0" y="-170.5" />
+      <point x="472.5" y="79.0" />
+      <point x="655.5" y="79.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="world.ucode.scenes.GamePlay" target="world.ucode.scenes.GameScene">
+      <point x="0.0" y="-27.0" />
+      <point x="1168.0" y="1340.0" />
+      <point x="1014.5999999999999" y="1340.0" />
+      <point x="52.59999999999991" y="38.5" />
+    </edge>
+    <edge source="world.ucode.controllers.ControllerLoadGame" target="world.ucode.controllers.Controller">
+      <point x="0.0" y="-60.5" />
+      <point x="1005.0" y="849.0" />
+      <point x="746.6" y="849.0" />
+      <point x="31.600000000000023" y="27.0" />
+    </edge>
+    <edge source="world.ucode.controllers.ControllerGameOver" target="world.ucode.controllers.Controller">
+      <point x="0.0" y="-60.5" />
+      <point x="1295.0" y="839.0" />
+      <point x="778.2" y="839.0" />
+      <point x="63.200000000000045" y="27.0" />
+    </edge>
+    <edge source="world.ucode.pet.PetAction" target="java.lang.Enum">
+      <point x="0.0" y="-60.5" />
+      <point x="251.25" y="470.0" />
+      <point x="278.25" y="470.0" />
+      <point x="-83.25" y="170.5" />
+    </edge>
+    <edge source="world.ucode.scenes.NewGame" target="world.ucode.scenes.GameScene">
+      <point x="0.0" y="-27.0" />
+      <point x="1370.5" y="1330.0" />
+      <point x="1067.2" y="1330.0" />
+      <point x="105.20000000000005" y="38.5" />
+    </edge>
+    <edge source="world.ucode.controllers.ControllerNewGame" target="world.ucode.controllers.Controller">
+      <point x="0.0" y="-82.5" />
+      <point x="135.0" y="839.0" />
+      <point x="651.8" y="839.0" />
+      <point x="-63.200000000000045" y="27.0" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.io.Serializable">
+      <point x="-111.0" y="-170.5" />
+      <point x="250.5" y="79.0" />
+      <point x="72.0" y="79.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="world.ucode.pet.PetType" target="java.lang.Enum">
+      <point x="0.0" y="-60.5" />
+      <point x="471.75" y="470.0" />
+      <point x="444.75" y="470.0" />
+      <point x="83.25" y="170.5" />
+    </edge>
+    <edge source="world.ucode.Main" target="javafx.application.Application">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="world.ucode.controllers.ControllerGameMenu" target="world.ucode.controllers.Controller">
+      <point x="0.0" y="-60.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5888352120236178" x="921.5000000000001" y="781.5" />
+  <SelectedNodes>
+    <node>world.ucode.animation.MinionAnimation</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="PaneRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Button fx:id="NewGameButton" mnemonicParsing="false" onMouseClicked="#HandleNewGame" style="-fx-background-color: grey;" text="NEW GAME" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Connection II Font" size="30.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets left="20.0" top="250.0" />
+         </BorderPane.margin>
+      </Button>
+   </left>
+   <right>
+      <Button fx:id="LoadGameButton" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#HandleLoadGame" style="-fx-background-color: grey;" text="LOAD GAME" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Avenir Black" size="30.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets right="20.0" top="250.0" />
+         </BorderPane.margin>
+      </Button>
+   </right>
+   <top>
+      <Label alignment="TOP_CENTER" text="OLD SCHOOL TAMAGOCHI" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Didot" size="50.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>
