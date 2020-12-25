@@ -30,6 +30,6 @@ public class MonkeyAnimation {
     }
 
     private Image GetImage(HeroAction action) {
-        return new Image("/Images/" + type.toString() + "/" + action.toString() + ".gif", 800, 600, false, false);
+        return new Image("/Images/" + type.toString() + "/" + action.toString() + ".gif", 913, 400, false, false);
     }
 }

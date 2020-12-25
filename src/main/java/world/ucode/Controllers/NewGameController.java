@@ -21,24 +21,17 @@ public class NewGameController extends Controller {
     GamePlay game;
 
     @FXML
-    private void HandleBob() {
+    private void HandleDog() {
         String name = InputName.getText();
         if (name.length() != 0)
             game = new GamePlay(primaryStage, new Monkey(HeroType.BOB, name));
     }
 
     @FXML
-    private void HandleKevin() {
+    private void HandleMonkey() {
         String name = InputName.getText();
         if (name.length() != 0)
             game = new GamePlay(primaryStage, new Monkey(HeroType.KEVIN, name));
-    }
-
-    @FXML
-    private void HandleStuart() {
-        String name = InputName.getText();
-        if (name.length() != 0)
-            game = new GamePlay(primaryStage, new Monkey(HeroType.STUART, name));
     }
 
     @FXML
@@ -49,21 +42,18 @@ public class NewGameController extends Controller {
     @FXML
     Button BackNewGame;
     @FXML
-    Button Bob;
+    Button Dog;
     @FXML
-    Button Kevin;
-    @FXML
-    Button Stuart;
+    Button Monkey;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         BackNewGame.setOnMouseEntered(e -> BackNewGame.setStyle(styleHover));
         BackNewGame.setOnMouseExited(e -> BackNewGame.setStyle(style));
-        Bob.setOnMouseEntered(e -> Bob.setStyle(styleHover));
-        Bob.setOnMouseExited(e -> Bob.setStyle(style));
-        Kevin.setOnMouseEntered(e -> Kevin.setStyle(styleHover));
-        Kevin.setOnMouseExited(e -> Kevin.setStyle(style));
-        Stuart.setOnMouseEntered(e -> Stuart.setStyle(styleHover));
-        Stuart.setOnMouseExited(e -> Stuart.setStyle(style));
+        Dog.setOnMouseEntered(e -> Dog.setStyle(styleHover));
+        Dog.setOnMouseExited(e -> Dog.setStyle(style));
+        Monkey.setOnMouseEntered(e -> Monkey.setStyle(styleHover));
+        Monkey.setOnMouseExited(e -> Monkey.setStyle(style));
     }
 }

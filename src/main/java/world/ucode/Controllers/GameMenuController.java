@@ -33,7 +33,7 @@ public class GameMenuController extends Controller{
     public void initialize(URL url, ResourceBundle resourceBundle) {
         NewGameButton.setOnMouseEntered(e -> NewGameButton.setStyle(styleHover));
         NewGameButton.setOnMouseExited(e -> NewGameButton.setStyle(style));
-//        LoadGameButton.setOnMouseEntered(e -> LoadGameButton.setStyle(styleHover));
-//        LoadGameButton.setOnMouseExited(e -> LoadGameButton.setStyle(style));
+        LoadGameButton.setOnMouseEntered(e -> LoadGameButton.setStyle(styleHover));
+        LoadGameButton.setOnMouseExited(e -> LoadGameButton.setStyle(style));
     }
 }
