@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import world.ucode.Hero.Monkey;
+import world.ucode.Hero.Pet;
 import world.ucode.Hero.HeroType;
 import world.ucode.Scenes.GameMenu;
 import world.ucode.Scenes.GamePlay;
@@ -24,14 +24,14 @@ public class NewGameController extends Controller {
     private void HandleDog() {
         String name = InputName.getText();
         if (name.length() != 0)
-            game = new GamePlay(primaryStage, new Monkey(HeroType.BOB, name));
+            game = new GamePlay(primaryStage, new Pet(HeroType.DOG, name));
     }
 
     @FXML
     private void HandleMonkey() {
         String name = InputName.getText();
         if (name.length() != 0)
-            game = new GamePlay(primaryStage, new Monkey(HeroType.KEVIN, name));
+            game = new GamePlay(primaryStage, new Pet(HeroType.MONKEY, name));
     }
 
     @FXML

@@ -14,10 +14,10 @@ import javafx.scene.image.ImageView;
 import javafx.stage.WindowEvent;
 import javafx.util.Duration;
 import world.ucode.DataBase;
-import world.ucode.Hero.Monkey;
+import world.ucode.Hero.Pet;
 import world.ucode.Hero.HeroAction;
 import world.ucode.Scenes.GameMenu;
-import world.ucode.Animation.MonkeyAnimation;
+import world.ucode.Animation.PetAnimation;
 //import world.ucode.Scenes.GameOver;
 
 import java.lang.reflect.InvocationTargetException;
@@ -26,22 +26,22 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class GamePlayController extends Controller{
-    Monkey monkey;
-    MonkeyAnimation animation;
+    Pet pet;
+    PetAnimation animation;
     Timeline LiveCycle;
 
     @FXML
     ImageView AnimationView;
 
     @FXML
-    ImageView MonkeyView;
+    ImageView PetView;
 
     @FXML
-    Label MonkeyName;
+    Label PetName;
 
-    public GamePlayController(Stage primaryStage, Monkey monkey) {
+    public GamePlayController(Stage primaryStage, Pet pet) {
         super(primaryStage);
-        this.monkey = monkey;
+        this.pet = pet;
     }
 
 
@@ -49,37 +49,37 @@ public class GamePlayController extends Controller{
     public void initialize(URL url, ResourceBundle resourceBundle) {
         primaryStage.getScene().getWindow().addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, this::HandleClose);
         ButtonSetStyle();
-        MonkeyName.setText(monkey.GetType().toString());
-        MonkeyName.setAlignment(Pos.TOP_CENTER);
-        this.animation = new MonkeyAnimation(monkey.GetType(),AnimationView, MonkeyView);
+//        PetName.setText(pet.GetType().toString());
+//        PetName.setAlignment(Pos.TOP_CENTER);
+       this.animation = new PetAnimation(pet.GetType(),AnimationView, PetView);
         startLiveCycle();
     }
 
     private void HandleClose(WindowEvent event){
         LiveCycle.stop();
-        SaveMonkey();
+        SavePet();
     }
 
-    private void SaveMonkey(){
+    private void SavePet(){
         try {
-            DataBase.WriteDB(monkey.GetType().toString(), monkey.GetName(), monkey.GetHealth(), monkey.GetHappiness(),
-                    monkey.GetHunger(), monkey.GetThirst(), monkey.GetCleanliness());;
+            DataBase.WriteDB(pet.GetType().toString(), pet.GetName(), pet.GetHealth(), pet.GetHappiness(),
+                    pet.GetHunger(), pet.GetThirst(), pet.GetCleanliness());;
         }
         catch (SQLException ignored) {
             System.err.println("SQLException");
         }
     }
     private void SetProgress() {
-        ProgressBarHealth.setProgress(monkey.GetHealth()/monkey.GetMaxHealth());
-        ProgressBarHappiness.setProgress(monkey.GetHappiness()/10);
-        ProgressBarHunger.setProgress(monkey.GetHunger()/10);
-        ProgressBarThirst.setProgress(monkey.GetThirst()/10);
-        ProgressBarCleanliness.setProgress(monkey.GetCleanliness()/10);
+        ProgressBarHealth.setProgress(pet.GetHealth()/pet.GetMaxHealth());
+        ProgressBarHappiness.setProgress(pet.GetHappiness()/10);
+        ProgressBarHunger.setProgress(pet.GetHunger()/10);
+        ProgressBarThirst.setProgress(pet.GetThirst()/10);
+        ProgressBarCleanliness.setProgress(pet.GetCleanliness()/10);
     }
     @FXML
     private void HandleBackGamePlay() {
         LiveCycle.stop();
-        SaveMonkey();
+        SavePet();
         GameMenu menu = new GameMenu(primaryStage);
     }
     @FXML
@@ -95,31 +95,31 @@ public class GamePlayController extends Controller{
 
     @FXML
     private void HandlePlay() throws InvocationTargetException, IllegalAccessException {
-        monkey.ActionHandler(HeroAction.PLAY, monkey);
+        pet.ActionHandler(HeroAction.PLAY, pet);
         animation.HandleAnimation(HeroAction.PLAY);
     }
 
     @FXML
     private void HandleFeed() throws InvocationTargetException, IllegalAccessException {
-        monkey.ActionHandler(HeroAction.FEED, monkey);
+        pet.ActionHandler(HeroAction.FEED, pet);
         animation.HandleAnimation(HeroAction.FEED);
     }
 
     @FXML
     private void HandleGiveWater() throws InvocationTargetException, IllegalAccessException {
-        monkey.ActionHandler(HeroAction.GIVE_WATER, monkey);
+        pet.ActionHandler(HeroAction.GIVE_WATER, pet);
         animation.HandleAnimation(HeroAction.GIVE_WATER);
     }
 
     @FXML
     private void HandleGiveMedicine() throws InvocationTargetException, IllegalAccessException {
-        monkey.ActionHandler(HeroAction.GIVE_MEDICINE, monkey);
+        pet.ActionHandler(HeroAction.GIVE_MEDICINE, pet);
         animation.HandleAnimation(HeroAction.GIVE_MEDICINE);
     }
 
     @FXML
     private void HandleCleanUp() throws InvocationTargetException, IllegalAccessException {
-        monkey.ActionHandler(HeroAction.CLEAN_UP, monkey);
+        pet.ActionHandler(HeroAction.CLEAN_UP, pet);
         animation.HandleAnimation(HeroAction.CLEAN_UP);
     }
 
@@ -131,9 +131,9 @@ public class GamePlayController extends Controller{
                 new KeyFrame(Duration.seconds(0.1), new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        if (monkey.LiveCycle() == -1) {
+                        if (pet.LiveCycle() == -1) {
                             try {
-                                DataBase.DeleteDB(monkey.GetName());
+                                DataBase.DeleteDB(pet.GetName());
                             } catch (SQLException throwables) {
                                 throwables.printStackTrace();
                             }

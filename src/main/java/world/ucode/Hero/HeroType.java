@@ -1,9 +1,8 @@
 package world.ucode.Hero;
 
 public enum HeroType {
-    STUART("Stuart"),
-    KEVIN("Kevin"),
-    BOB("Bob");
+    DOG("Dog"),
+    MONKEY("Monkey");
 
     private final String name;
     HeroType(final String name) {
