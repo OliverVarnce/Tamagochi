@@ -8,58 +8,65 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="913.0" style="-fx-background-image: url(./Images/background_oldschool.png);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="819.0">
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="910.0" prefWidth="819.0">
          <top>
             <HBox prefHeight="134.0" prefWidth="819.0" spacing="50.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="FeedButton" layoutX="10.0" mnemonicParsing="false" onMouseClicked="#HandleFeed" prefHeight="123.0" prefWidth="139.0" style="-fx-background-color: transparent;" text="feed">
+                  <Button fx:id="FeedButton" layoutX="10.0" mnemonicParsing="false" onMouseClicked="#HandleFeed" prefHeight="100.0" prefWidth="100.0" style="-fx-background-image: url(./Images/feed.png); -fx-background-color: transparent;">
                      <font>
                         <Font name="Avenir Black" size="15.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="30.0" />
+                        <Insets left="45.0" top="17.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="PlayButton" mnemonicParsing="false" onMouseClicked="#HandlePlay" prefHeight="123.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="play">
+                  <Button fx:id="PlayButton" mnemonicParsing="false" onMouseClicked="#HandlePlay" prefHeight="100.0" prefWidth="100.0" style="-fx-background-image: url(./Images/play.png); -fx-background-color: transparent;">
                      <HBox.margin>
-                        <Insets left="100.0" />
+                        <Insets left="155.0" top="17.0" />
                      </HBox.margin>
                      <font>
                         <Font name="Avenir Black" size="15.0" />
                      </font>
                   </Button>
-                  <Button fx:id="GiveWaterButton" mnemonicParsing="false" onMouseClicked="#HandleGiveWater" prefHeight="123.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="give water">
+                  <Button fx:id="GiveWaterButton" mnemonicParsing="false" onMouseClicked="#HandleGiveWater" prefHeight="100.0" prefWidth="100.0" style="-fx-background-image: url(./Images/water.png); -fx-background-color: transparent;">
                      <font>
                         <Font name="Avenir Black" size="15.0" />
                      </font>
+                     <HBox.margin>
+                        <Insets left="160.0" top="17.0" />
+                     </HBox.margin>
                   </Button>
                </children>
             </HBox>
          </top>
          <bottom>
-            <Pane prefHeight="169.0" prefWidth="819.0" BorderPane.alignment="CENTER">
-               <HBox prefHeight="134.0" prefWidth="819.0" spacing="50.0" BorderPane.alignment="CENTER">
+            <Pane prefHeight="126.0" prefWidth="819.0" BorderPane.alignment="CENTER">
+               <HBox prefHeight="257.0" prefWidth="819.0" spacing="50.0" BorderPane.alignment="CENTER">
                   <children>
-                     <Button fx:id="BackGamePlay" layoutX="57.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#HandleBackGamePlay" prefHeight="123.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="&lt;">
+                     <Button fx:id="BackGamePlay" layoutX="57.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#HandleBackGamePlay" prefHeight="100.0" prefWidth="100.0" style="-fx-background-image: url(./Images/back.png); -fx-background-color: transparent;">
                         <font>
                            <Font name="Avenir Black" size="15.0" />
                         </font>
+                        <HBox.margin>
+                           <Insets left="40.0" />
+                        </HBox.margin>
                      </Button>
-                     <Button fx:id="GiveMedicineButton" mnemonicParsing="false" onMouseClicked="#HandleGiveMedicine" prefHeight="123.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="give medicine">
+                     <Button fx:id="GiveMedicineButton" mnemonicParsing="false" onMouseClicked="#HandleGiveMedicine" prefHeight="100.0" prefWidth="100.0" style="-fx-background-image: url(./Images/medicine.png); -fx-background-color: transparent;">
                      <font>
                         <Font name="Avenir Black" size="15.0" />
                      </font>
+                        <HBox.margin>
+                           <Insets left="160.0" />
+                        </HBox.margin>
                   </Button>
-                     <Button fx:id="CleanUpButton" layoutX="25.0" mnemonicParsing="false" onMouseClicked="#HandleCleanUp" prefHeight="123.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="clean up">
+                     <Button fx:id="CleanUpButton" layoutX="25.0" mnemonicParsing="false" onMouseClicked="#HandleCleanUp" prefHeight="100.0" prefWidth="100.0" style="-fx-background-image: url(./Images/clean_up.png); -fx-background-color: transparent;">
                         <font>
                            <Font name="Avenir Black" size="15.0" />
                         </font>
+                        <HBox.margin>
+                           <Insets left="160.0" />
+                        </HBox.margin>
                      </Button>
-<!--                     <Label fx:id="MinionName" layoutX="363.0" layoutY="23.0" style="-fx-background-color: yellow;" text="NAME">-->
-<!--                        <font>-->
-<!--                           <Font name="Avenir Next Regular" size="25.0" />-->
-<!--                        </font>-->
-<!--                     </Label>-->
                   </children>
                </HBox>
             </Pane>

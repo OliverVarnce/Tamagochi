@@ -49,9 +49,7 @@ public class GamePlayController extends Controller{
     public void initialize(URL url, ResourceBundle resourceBundle) {
         primaryStage.getScene().getWindow().addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, this::HandleClose);
         ButtonSetStyle();
-//        PetName.setText(pet.GetType().toString());
-//        PetName.setAlignment(Pos.TOP_CENTER);
-       this.animation = new PetAnimation(pet.GetType(),AnimationView, PetView);
+        this.animation = new PetAnimation(pet.GetType(),AnimationView, PetView);
         startLiveCycle();
     }
 
@@ -103,6 +101,8 @@ public class GamePlayController extends Controller{
     private void HandleFeed() throws InvocationTargetException, IllegalAccessException {
         pet.ActionHandler(HeroAction.FEED, pet);
         animation.HandleAnimation(HeroAction.FEED);
+
+
     }
 
     @FXML
@@ -160,17 +160,17 @@ public class GamePlayController extends Controller{
     Button CleanUpButton;
 
     private void ButtonSetStyle() {
-        BackGamePlay.setOnMouseEntered(e -> BackGamePlay.setStyle(styleHover));
-        BackGamePlay.setOnMouseExited(e -> BackGamePlay.setStyle(style));
-        PlayButton.setOnMouseEntered(e -> PlayButton.setStyle(styleHover));
-        PlayButton.setOnMouseExited(e -> PlayButton.setStyle(style));
-        FeedButton.setOnMouseEntered(e -> FeedButton.setStyle(styleHover));
-        FeedButton.setOnMouseExited(e -> FeedButton.setStyle(style));
-        GiveWaterButton.setOnMouseEntered(e -> GiveWaterButton.setStyle(styleHover));
-        GiveWaterButton.setOnMouseExited(e -> GiveWaterButton.setStyle(style));
-        GiveMedicineButton.setOnMouseEntered(e -> GiveMedicineButton.setStyle(styleHover));
-        GiveMedicineButton.setOnMouseExited(e -> GiveMedicineButton.setStyle(style));
-        CleanUpButton.setOnMouseEntered(e -> CleanUpButton.setStyle(styleHover));
-        CleanUpButton.setOnMouseExited(e -> CleanUpButton.setStyle(style));
+        BackGamePlay.setOnMouseEntered(e -> BackGamePlay.setStyle(styleBackHover));
+        BackGamePlay.setOnMouseExited(e -> BackGamePlay.setStyle(styleBack));
+        PlayButton.setOnMouseEntered(e -> PlayButton.setStyle(stylePlayHover));
+        PlayButton.setOnMouseExited(e -> PlayButton.setStyle(stylePlay));
+        FeedButton.setOnMouseEntered(e -> FeedButton.setStyle(styleFeedHover));
+        FeedButton.setOnMouseExited(e -> FeedButton.setStyle(styleFeed));
+        GiveWaterButton.setOnMouseEntered(e -> GiveWaterButton.setStyle(styleWaterHover));
+        GiveWaterButton.setOnMouseExited(e -> GiveWaterButton.setStyle(styleWater));
+        GiveMedicineButton.setOnMouseEntered(e -> GiveMedicineButton.setStyle(styleMedicineHover));
+        GiveMedicineButton.setOnMouseExited(e -> GiveMedicineButton.setStyle(styleMedicine));
+        CleanUpButton.setOnMouseEntered(e -> CleanUpButton.setStyle(styleCleanupHover));
+        CleanUpButton.setOnMouseExited(e -> CleanUpButton.setStyle(styleCleanup));
     }
 }

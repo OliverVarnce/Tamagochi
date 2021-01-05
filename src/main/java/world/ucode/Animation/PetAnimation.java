@@ -14,7 +14,6 @@ public class PetAnimation {
     private final ImageView AnimationView;
     private final Timeline timeline;
 
-
     public PetAnimation(HeroType type, ImageView AnimationView, ImageView PetView) {
         this.AnimationView = AnimationView;
         this.type = type;
@@ -26,10 +25,15 @@ public class PetAnimation {
     public void HandleAnimation(HeroAction action) {
         AnimationView.setImage(GetImage(action));
         AnimationView.setVisible(true);
+        AnimationView.setX(200.00);
+        AnimationView.setY(200.00);
+        AnimationView.setFitHeight(400.00);
+        AnimationView.setFitWidth(10000.00);
         timeline.play();
     }
 
     private Image GetImage(HeroAction action) {
-        return new Image("/Images/" + type.toString() + "/" + action.toString() + ".gif", 913, 400, false, false);
+        return new Image("/Images/" + type.toString() + "/" + action.toString() + ".gif", 250, 200, false, false);
+
     }
 }
