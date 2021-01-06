@@ -2,10 +2,21 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <BorderPane fx:id="PaneRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="913.0" prefWidth="600.0" style="-fx-background-image: url(./Images/background_oldschool.png);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="160.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@/Images/dog.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="380.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@/Images/monkey.png" />
+      </image>
+   </ImageView>
    <left>
       <Button fx:id="NewGameButton" mnemonicParsing="false" onMouseClicked="#HandleNewGame" style="-fx-background-color: black; -fx-border-insets: 1; -fx-border-width: 3; -fx-border-color: black;" text="NEW GAME" textFill="#ffffff" BorderPane.alignment="CENTER">
          <font>
@@ -17,7 +28,7 @@
       </Button>
    </left>
    <right>
-      <Button fx:id="LoadGameButton" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#HandleLoadGame" style="-fx-background-color: black; -fx-border-insets: 1; -fx-border-width: 3; -fx-border-color: black;" textFill="#ffffff" text="LOAD GAME" BorderPane.alignment="CENTER">
+      <Button fx:id="LoadGameButton" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#HandleLoadGame" style="-fx-background-color: black; -fx-border-insets: 1; -fx-border-width: 3; -fx-border-color: black;" text="LOAD GAME" textFill="#ffffff" BorderPane.alignment="CENTER">
          <font>
             <Font name="Silom" size="36.0" />
          </font>

@@ -25,15 +25,15 @@ public class PetAnimation {
     public void HandleAnimation(HeroAction action) {
         AnimationView.setImage(GetImage(action));
         AnimationView.setVisible(true);
-        AnimationView.setX(200.00);
-        AnimationView.setY(200.00);
-        AnimationView.setFitHeight(400.00);
-        AnimationView.setFitWidth(10000.00);
+        AnimationView.setX(0.00);
+        AnimationView.setY(0.00);
+        AnimationView.setFitHeight(913.00);
+        AnimationView.setFitWidth(800.00);
         timeline.play();
     }
 
     private Image GetImage(HeroAction action) {
-        return new Image("/Images/" + type.toString() + "/" + action.toString() + ".gif", 250, 200, false, false);
+        return new Image("/Images/" + type.toString() + "/" + action.toString() + ".gif", 800, 913, false, false);
 
     }
 }

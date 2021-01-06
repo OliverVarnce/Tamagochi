@@ -49,8 +49,8 @@ public class NewGameController extends Controller {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        BackNewGame.setOnMouseEntered(e -> BackNewGame.setStyle(styleHover));
-        BackNewGame.setOnMouseExited(e -> BackNewGame.setStyle(style));
+        BackNewGame.setOnMouseEntered(e -> BackNewGame.setStyle(styleBackHover));
+        BackNewGame.setOnMouseExited(e -> BackNewGame.setStyle(styleBack));
         Dog.setOnMouseEntered(e -> Dog.setStyle(styleHover));
         Dog.setOnMouseExited(e -> Dog.setStyle(style));
         Monkey.setOnMouseEntered(e -> Monkey.setStyle(styleHover));

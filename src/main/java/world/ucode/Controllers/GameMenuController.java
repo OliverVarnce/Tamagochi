@@ -3,7 +3,7 @@ package world.ucode.Controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-//import world.ucode.scenes.LoadGame;
+import world.ucode.Scenes.LoadGame;
 import world.ucode.Scenes.NewGame;
 
 import java.net.URL;
@@ -21,7 +21,7 @@ public class GameMenuController extends Controller{
 
     @FXML
     private void HandleLoadGame() {
-//        LoadGame scene = new LoadGame(primaryStage);
+        LoadGame scene = new LoadGame(primaryStage);
     }
 
     @FXML

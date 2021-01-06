@@ -22,14 +22,14 @@
             <Image url="@/Images/monkey.png" />
          </image>
       </ImageView>
-      <Button fx:id="Monkey" layoutX="540.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#HandleMonkey" style="-fx-background-color: black; -fx-border-insets: 1; -fx-border-width: 3; -fx-border-color: black;" text="Pet" textFill="WHITE">
+      <Button fx:id="Monkey" layoutX="540.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#HandleMonkey" style="-fx-background-color: black; -fx-border-insets: 1; -fx-border-width: 3; -fx-border-color: black;" text="MONKEY" textFill="WHITE">
          <font>
             <Font name="Avenir Next Regular" size="30.0" />
          </font>
       </Button>
-      <Button fx:id="BackNewGame" layoutX="50.0" layoutY="797.0" mnemonicParsing="false" onMouseClicked="#HandleBackNewGame" style="-fx-background-color: transparent;" text="&lt;">
+      <Button fx:id="BackNewGame" layoutX="57.0" layoutY="790.0" mnemonicParsing="false" onMouseClicked="#HandleBackNewGame" prefHeight="100.0" prefWidth="100.0" style="-fx-background-image: url(./Images/back.png); -fx-background-color: transparent;">
          <font>
-            <Font name="Avenir Next Bold" size="36.0" />
+            <Font name="Avenir Black" size="15.0" />
          </font>
       </Button>
       <TextField fx:id="InputName" layoutX="260.0" layoutY="150.0" promptText="type your name" style="-fx-border-insets: 1; -fx-border-width: 3; -fx-border-color: black;">

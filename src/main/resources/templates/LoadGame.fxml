@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="913.0" style="-fx-background-image: url(./Images/background_oldschool.png);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">   <children>
+      <Label layoutX="249.0" layoutY="200.0" style="-fx-background-color: black;" text="LOAD GAME" textFill="WHITE">
+         <font>
+            <Font name="Silom" size="50.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Button fx:id="SelectButton" layoutX="325.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#HandleSelect" style="-fx-background-color: black;" text="SELECT" textFill="WHITE">
+         <font>
+            <Font name="Silom" size="30.0" />
+         </font></Button>
+      <ChoiceBox fx:id="LoadMinions" layoutX="325.0" layoutY="300.0" prefWidth="150.0" style="-fx-background-color: black;" />
+   <Button fx:id="BackGamePlay" layoutX="57.0" layoutY="790.0" mnemonicParsing="false" onMouseClicked="#HandleBack" prefHeight="100.0" prefWidth="100.0" style="-fx-background-image: url(./Images/back.png); -fx-background-color: transparent;">
+      <font>
+         <Font name="Avenir Black" size="15.0" />
+      </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+   </Button>
+   </children>
+</Pane>

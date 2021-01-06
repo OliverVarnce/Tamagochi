@@ -84,8 +84,8 @@
                         <Font name="Silom" size="13.0" />
                      </font>
                   </Label>
-                  <ProgressBar fx:id="ProgressBarThirst" layoutX="19.0" layoutY="10.0" prefHeight="20.0" prefWidth="100.0" progress="0.0" />
-                  <ProgressBar fx:id="ProgressBarCleanliness" layoutX="175.0" layoutY="10.0" prefHeight="20.0" prefWidth="100.0" progress="0.0" />
+                  <ProgressBar fx:id="ProgressBarThirst" layoutX="19.0" layoutY="10.0" prefHeight="20.0" prefWidth="100.0" progress="0.0" style="-fx-background-color: transparent; -fx-accent: black; -fx-box-border: black;"/>
+                  <ProgressBar fx:id="ProgressBarCleanliness" layoutX="175.0" layoutY="10.0" prefHeight="20.0" prefWidth="100.0" progress="0.0" style="-fx-background-color: transparent; -fx-accent: black; -fx-box-border: black;"/>
                </children>
             </Pane>
          </right>

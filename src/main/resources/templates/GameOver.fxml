@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="913.0" style="-fx-background-image: url(./Images/background_oldschool.png);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="RestartButton" layoutX="145.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#HandleRestart" style="-fx-background-color: black;" text="RESTART" textFill="WHITE">
+         <font>
+            <Font name="Avenir Black" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="ExitButton" layoutX="500.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#HandleExit" style="-fx-background-color: black;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Avenir Black" size="30.0" />
+         </font>
+      </Button>
+      <Pane layoutX="198.0" layoutY="300.0" prefHeight="150.0" prefWidth="366.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="30.0" layoutY="38.0" text="GAME OVER" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Next Regular" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

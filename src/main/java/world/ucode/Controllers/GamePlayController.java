@@ -18,7 +18,7 @@ import world.ucode.Hero.Pet;
 import world.ucode.Hero.HeroAction;
 import world.ucode.Scenes.GameMenu;
 import world.ucode.Animation.PetAnimation;
-//import world.ucode.Scenes.GameOver;
+import world.ucode.Scenes.GameOver;
 
 import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
@@ -92,17 +92,15 @@ public class GamePlayController extends Controller{
     ProgressBar ProgressBarCleanliness;
 
     @FXML
-    private void HandlePlay() throws InvocationTargetException, IllegalAccessException {
-        pet.ActionHandler(HeroAction.PLAY, pet);
-        animation.HandleAnimation(HeroAction.PLAY);
-    }
-
-    @FXML
     private void HandleFeed() throws InvocationTargetException, IllegalAccessException {
         pet.ActionHandler(HeroAction.FEED, pet);
         animation.HandleAnimation(HeroAction.FEED);
+    }
 
-
+    @FXML
+    private void HandlePlay() throws InvocationTargetException, IllegalAccessException {
+        pet.ActionHandler(HeroAction.PLAY, pet);
+        animation.HandleAnimation(HeroAction.PLAY);
     }
 
     @FXML
@@ -138,7 +136,7 @@ public class GamePlayController extends Controller{
                                 throwables.printStackTrace();
                             }
                             LiveCycle.stop();
-                            //GameOver menu = new GameOver(primaryStage);
+                            GameOver menu = new GameOver(primaryStage);
                         }
                         SetProgress();
                     }

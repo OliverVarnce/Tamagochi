@@ -11,7 +11,7 @@ public abstract class GameScene {
     GameScene(Stage primaryStage, String fxmlName, Object Controller) {
         try {
             FXMLLoader loader = new
-                    FXMLLoader(getClass().getResource("/FXML/" + fxmlName));
+                    FXMLLoader(getClass().getResource("/templates/" + fxmlName));
             loader.setController(Controller);
             PaneRoot = loader.load();
             scene = new Scene(PaneRoot, 800, 913);
